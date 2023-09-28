@@ -1,0 +1,35 @@
+{
+    "id": "a93ff10e-cb28-407e-ab9c-17b69d8456b1",
+    "files": [],
+    "nodes": [
+        {
+            "id": "01ea070c-4008-482a-b63e-534c4b92db14",
+            "name": "",
+            "value": "<H3><font color=\"yellow\"><strong>Demonstração:</strong></font></H3>",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "bf671597-bd10-4973-966e-589e4dd08ed5",
+            "name": "",
+            "value": "#### Código: BWR_Demo01.ecl\n##### Estruturas de dados basicas em ECL",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "335f69ee-b28e-4f4d-b4aa-4ff634560258",
+            "name": "",
+            "value": "// Estrutura RECORD\nrec := RECORD\n    STRING10  \tFirstname;\n\tSTRING     \tLastname;\n\tSTRING1   \tGender;\n\tUNSIGNED1\tAge;\n    STRING      Nationality;\n    STRING      Occupation;\n    STRING      Account;\n\tINTEGER  \tBalance;\n\tDECIMAL7_2 \tIncome;\nEND;\n\n// Declaracao DATASET\nds := DATASET([{'Isaac','Newton','M',84,'english','scientist','cc100',100,3500.00},\n               {'Albert','Einstein','M',76,'german','scientist','cc200',-100,4000.30},\n               {'Marie','Curie','F',66,'polish','scientist','cc300',200,3640.10},\n               {'Victor','Hugo','M',83,'french','writer','cc400',150,1900.00},\n               {'Jane','Austen','F',41,'english','writer','cc500',180,2000.00},\n               {'Emily','Bronte','F',30,'english','writer','cc600',120,1800.00},\n               {'Jane','Doe','',25,'brazilian','unemployed','cc700',-500,0.00},\n               {'John','Doe','U',65,'american','retired','cc800',750,3211.11}],rec);\n// OUTPUT(ds);               //\tSUBMIT 00\nds;\t\t\t                 //\tSUBMIT 01\n",
+            "mode": "ecl",
+            "outputs": [],
+            "private": false
+        },
+        {
+            "id": "7c9dc4e8-3d13-431e-8aba-7cea4215ada2",
+            "name": "",
+            "value": "<style>\n    .rosa{background-color: mistyrose;}\n    .ciano{background-color: lightcyan;}\n    .amarelo{background-color: lightyellow;}\n</style>\n\n<table border=\"1\"\n  <colgroup>\n    <col class=\"rosa\">\n    <col class=\"ciano\">\n    <col class=\"amarelo\">\n  </colgroup>\n<tr><td><strong>\n\n\n[<- Previous](BWR_Demo00.eclnb)\n</strong></td><td><strong>\n\n[ MENU ](Menu.eclnb)\n</strong></td><td><strong>\n\n[Next ->](modPersons.eclnb)\n</strong></td></tr><table>",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+Firstname,Lastname,Gender,Age,Nationality,Occupation,Account,Balance,Income
+Isaac,Newton,M,84,english,scientist,cc100,100,3500.00
+Albert,Einstein,M,76,german,scientist,cc200,-100,4000.30
+Marie,Curie,F,66,polish,scientist,cc300,200,3640.10
+Victor,Hugo,M,83,french,writer,cc400,150,1900.00
+Jane,Austen,F,41,english,writer,cc500,180,2000.00
+Emily,Bronte,F,30,english,writer,cc600,120,1800.00
+Jane,Doe,,25,brazilian,unemployed,cc700,-500,0.00
+John,Doe,U,65,american,retired,cc800,750,3211.11

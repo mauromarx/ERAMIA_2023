@@ -1,0 +1,22 @@
+Procedimento - Sequência de execução (submit/compile) dos códigos:
+
+Códigos:
+modProperty.ecl
+BWR_BrowseData.ecl (submit)
+isCleanFilter.ecl
+CleanProperty.ecl
+modPrepData.ecl
+BWR_ViewData1.ecl (submit)
+modSegConvData.ecl
+BWR_ViewData2.ecl (submit)
+BWR_TrainReg.ecl (submit)
+fn_GetPriceReg.ecl  (compilar em Roxie)
+BWR_TestQueriesReg.ecl (submit)
+
+Submit/Compile:
+BWR_BrowseData.ecl (submit)
+BWR_ViewData1.ecl (submit)
+BWR_ViewData2.ecl (submit)
+BWR_TrainReg.ecl (submit)
+fn_GetPriceReg.ecl  (compile em Roxie)
+BWR_TestQueriesReg.ecl (submit)

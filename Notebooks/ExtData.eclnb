@@ -1,0 +1,34 @@
+{
+    "id": "3ada0ddf-1cff-43ed-a238-9d002197a2d9",
+    "files": [],
+    "nodes": [
+        {
+            "id": "7642fde8-50e5-41d6-8bcc-bb93651c043f",
+            "name": "",
+            "value": "<H3><font color=\"cyan\"><strong>2. Extração dos dados</strong></font></H3>",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "71ea8c04-af29-4f0d-8c9f-10e9238e3505",
+            "name": "",
+            "value": "#### Código: modProperty.ecl\n##### Importação e análise dos dados:",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "418cccfc-e984-4098-9963-2321f4cd0ea4",
+            "name": "",
+            "value": "EXPORT modProperty := MODULE\n  EXPORT Layout := RECORD\n   UNSIGNED8 personid;\n   INTEGER8  propertyid;\n   STRING10  house_number;\n   STRING10  house_number_suffix;\n   STRING2   predir;\n   STRING30  street;\n   STRING5   streettype;\n   STRING2   postdir;\n   STRING6   apt;\n   STRING40  city;\n   STRING2   state;\n   STRING5   zip;\n   UNSIGNED4 total_value;\n   UNSIGNED4 assessed_value;\n   UNSIGNED2 year_acquired;\n   UNSIGNED4 land_square_footage;\n   UNSIGNED4 living_square_feet;\n   UNSIGNED2 bedrooms;\n   UNSIGNED2 full_baths;\n   UNSIGNED2 half_baths;\n   UNSIGNED2 year_built;\n  END;\n  EXPORT File := DATASET('~CLASS::XYZ::ML::Property',Layout,CSV);\nEND;",
+            "mode": "ecl",
+            "outputs": []
+        },
+        {
+            "id": "c06ee519-65d5-4f2d-916c-d6a3f33c7f8c",
+            "name": "",
+            "value": "<style>\n    .rosa{background-color: mistyrose;}\n    .ciano{background-color: lightcyan;}\n    .amarelo{background-color: lightyellow;}\n</style>\n\n<table border=\"1\"\n  <colgroup>\n    <col class=\"rosa\">\n    <col class=\"ciano\">\n    <col class=\"amarelo\">\n  </colgroup>\n<tr><td><strong>\n\n\n[<- Previous](DefProblem.eclnb)\n</strong></td><td><strong>\n\n[ MENU ML ](Menu_ML.eclnb)\n</strong></td><td><strong>\n\n[Next ->](PrepData.eclnb)\n</strong></td></tr><table>",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}

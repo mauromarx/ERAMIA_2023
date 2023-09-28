@@ -1,0 +1,48 @@
+{
+    "id": "f54972c5-d0e2-4727-9b04-e7ef6cd9a577",
+    "files": [],
+    "nodes": [
+        {
+            "id": "2832aaa7-d21e-49a4-9e24-0ddb5bcdb9ea",
+            "name": "",
+            "value": "<H3><font color=\"cyan\"><strong>3. Preparação dos dados</strong></font></H3>",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "a8dea790-326c-4103-a194-bcab790ca291",
+            "name": "",
+            "value": "#### Códigos: isCleanFilter.ecl   |   modPrepData.ecl\n##### LImpeza dos dados:",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "53f47e2d-0100-4097-9921-632808a14d23",
+            "name": "",
+            "value": "IMPORT $;\n//\nProperty := $.modProperty.File;\n//\n// Limpando os dados...\nEXPORT isCleanFilter := Property.zip <> '' AND\n                        Property.assessed_value <> 0 AND\n                        Property.year_acquired <> 0 AND \n                        Property.land_square_footage <> 0 AND\n                        Property.living_square_feet <> 0 AND \n                        Property.bedrooms <> 0 AND\n                        Property.full_baths <> 0 AND\n                        Property.year_Built <> 0;\n//",
+            "mode": "ecl",
+            "outputs": []
+        },
+        {
+            "id": "d2392cbf-10b7-4265-aa84-ffb380d6c41e",
+            "name": "",
+            "value": "##### Preparação dos dados:",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "2d38a2b3-8939-417c-a165-ff4cae29f0f8",
+            "name": "",
+            "value": "IMPORT $;\n//\nProperty := $.modProperty.File;\n//\nEXPORT modPrepData := MODULE\n\tEXPORT ML_Prop := RECORD\n\t\tUNSIGNED8 PropertyID;\n\t\tUNSIGNED3 zip; \t\t\t            // variável Categórica\n\t\tUNSIGNED4 assessed_value;\n\t\tUNSIGNED2 year_acquired;\n\t\tUNSIGNED4 land_square_footage;\n\t\tUNSIGNED4 living_square_feet;\n\t\tUNSIGNED2 bedrooms;\n\t\tUNSIGNED2 full_baths;\n\t\tUNSIGNED2 half_baths;\n\t\tUNSIGNED2 year_built;\n\t\tUNSIGNED4 total_value; \t\t      // variável Dependente (a ser determinada)\n\tEND;\n//\n  EXPORT ML_PropExt := RECORD(ML_Prop)\n    UNSIGNED4 rnd;                  // número randômico\n  END;\n//\n\tEXPORT PrepData := PROJECT($.CleanProperty, TRANSFORM(ML_PropExt,\n                                                  SELF.rnd := RANDOM(),\n                                                  SELF.zip := (UNSIGNED3)LEFT.zip,\n                                                  SELF := LEFT))\n                        :PERSIST('~CLASS::XYZ::ML::PrepData');\n//\nEND;\n//",
+            "mode": "ecl",
+            "outputs": []
+        },
+        {
+            "id": "cb1b700d-0c50-49c4-a52a-5ff7f630b2c9",
+            "name": "",
+            "value": "<style>\n    .rosa{background-color: mistyrose;}\n    .ciano{background-color: lightcyan;}\n    .amarelo{background-color: lightyellow;}\n</style>\n\n<table border=\"1\"\n  <colgroup>\n    <col class=\"rosa\">\n    <col class=\"ciano\">\n    <col class=\"amarelo\">\n  </colgroup>\n<tr><td><strong>\n\n\n[<- Previous](ExtData.eclnb)\n</strong></td><td><strong>\n\n[ MENU ML ](Menu_ML.eclnb)\n</strong></td><td><strong>\n\n[Next ->](SegData.eclnb)\n</strong></td></tr><table>",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}

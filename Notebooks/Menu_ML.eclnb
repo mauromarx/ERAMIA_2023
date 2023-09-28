@@ -1,0 +1,13 @@
+{
+    "id": "ad304200-bfce-4d72-9544-df24ab6f2293",
+    "files": [],
+    "nodes": [
+        {
+            "id": "1d7c4a8f-a3ae-4752-b8c7-07cd651b6299",
+            "name": "",
+            "value": "<H4><font color=\"cyan\"><strong>MENU - <i>Machine Learning</i>:</strong></font></H4>\n\n<H3><i><font color=\"OrangeRed\"><strong>Fluxo de Aprendizado de Máquina Supervisionado</strong></font></i></H3>\n<img src=\".\\images\\Flow.jpg\"  alt=\"Flow\"  width=\"620\" />\n\n1. [Definição do problema](DefProblem.eclnb)\n2. [Extração dos dados](ExtData.eclnb)\n1. [Preparação dos dados](PrepData.eclnb)\n1. [Segregação dos dados](SegData.eclnb)\n2. [Treinamento e avaliação do modelo](TrainModel.eclnb)\n3. [Implantação do modelo](QueryData.eclnb)\n\n- [Abertura ML](Overture_ML.eclnb)",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}

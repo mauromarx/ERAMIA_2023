@@ -1,0 +1,7 @@
+{
+    "ecl.forceProxySupport": true,
+    "ecl.launchConfiguration": "localhost",
+    "ecl.targetCluster": {
+        "localhost": "thor"
+    }
+}

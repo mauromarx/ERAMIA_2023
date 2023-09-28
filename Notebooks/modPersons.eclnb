@@ -1,0 +1,34 @@
+{
+    "id": "0e6943c6-4af5-460a-b59f-5fe781103b43",
+    "files": [],
+    "nodes": [
+        {
+            "id": "37538b62-e92e-4424-821c-da114ba97bf8",
+            "name": "",
+            "value": "<H3><font color=\"yellow\"><strong>Demonstração:</strong></font></H3>",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "44bbb5ff-184b-43d2-b1a3-6577e9dd4d2a",
+            "name": "",
+            "value": "#### Código: modPersons.ecl\n##### Dataset \"Persons\" - *MODULE*:",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "673ee35b-302e-4e32-a0ee-64789df49515",
+            "name": "",
+            "value": "EXPORT modPersons := MODULE\n  EXPORT Layout := RECORD\n    INTEGER4  ID;\n    STRING15  FirstName;\n    STRING25  LastName;\n    STRING15  MiddleName;\n    STRING2   NameSuffix;\n    STRING8   FileDate;\n    UNSIGNED2 BureauCode;\n    STRING1   MaritalStatus;\n    STRING1   Gender;\n    UNSIGNED1 DependentCount;\n    STRING8   BirthDate;\n    STRING42  StreetAddress;\n    STRING20  City;\n    STRING2   State;\n    STRING5   ZipCode;\n  END;\n  EXPORT File := DATASET('~CLASS::XYZ::DEMO::Persons',Layout,FLAT);\nEND;",
+            "mode": "ecl",
+            "outputs": []
+        },
+        {
+            "id": "5b6dc563-d4ee-4f40-a23c-1c1d83e30211",
+            "name": "",
+            "value": "<style>\n    .rosa{background-color: mistyrose;}\n    .ciano{background-color: lightcyan;}\n    .amarelo{background-color: lightyellow;}\n</style>\n\n<table border=\"1\"\n  <colgroup>\n    <col class=\"rosa\">\n    <col class=\"ciano\">\n    <col class=\"amarelo\">\n  </colgroup>\n<tr><td><strong>\n\n\n[<- Previous](BWR_Demo01.eclnb)\n</strong></td><td><strong>\n\n[ MENU ](Menu.eclnb)\n</strong></td><td><strong>\n\n[Next ->](Overture_ML.eclnb)\n</strong></td></tr><table>",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "id": "062c3c53-44bf-4360-ab7f-7a8b06dca740",
+    "files": [],
+    "nodes": [
+        {
+            "id": "f2514d43-b89f-4686-939c-27f69f71759b",
+            "name": "",
+            "value": "<H3><font color=\"cyan\"><strong>5. Treinamento e avaliação do modelo</strong></font></H3>",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "22f1a826-86dc-4477-a5c6-e3fd4f16b019",
+            "name": "",
+            "value": "#### Código: BWR_TrainReg.ecl\n##### Treinamento, teste e avaliação do modelo:",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "347d6d39-cc4f-42b7-baf3-469affc47ea4",
+            "name": "",
+            "value": "IMPORT $;\nIMPORT ML_Core;\nIMPORT LearningTrees AS LT;\n//\n// Selecionando o algoritmo\n//   Sintaxe: RegressionForest(UNSIGNED numTrees=100, UNSIGNED featuresPerNode=0,\n//                             UNSIGNED maxDepth=100, SET OF UNSIGNED nominalFields=[])\n// myLearnerR := LT.RegressionForest();          // parâmetros default\n// myLearnerR := LT.RegressionForest(,,,[1]);    // zip não é realmente quantitativo, mas qualitativo\nmyLearnerR := LT.RegressionForest(10,,10,[1]); \n//\n//\n// Obtendo o modelo treinado\nmyModelR := myLearnerR.GetModel($.modSegConvData.myIndTrainDataNF,$.modSegConvData.myDepTrainDataNF);\nOUTPUT(myModelR,,'~CLASS::XYZ::ML::myModelR', NAMED('Modelo_Treinado'),OVERWRITE);\n//\n//\n// Testando o modelo\npredictedDeps := myLearnerR.Predict(myModelR,$.modSegConvData.myIndTestDataNF);\nOUTPUT(predictedDeps, NAMED('Valores_Previstos'));\n//\n//\n// Avaliando o modelo\nassessmentR := ML_Core.Analysis.Regression.Accuracy(predictedDeps,$.modSegConvData.myDepTestDataNF);\nOUTPUT(assessmentR, NAMED('Avaliacao_do_Modelo'));\n//",
+            "mode": "ecl",
+            "outputs": []
+        },
+        {
+            "id": "6b081d57-407b-4269-b41b-43a59c12c025",
+            "name": "",
+            "value": "<style>\n    .rosa{background-color: mistyrose;}\n    .ciano{background-color: lightcyan;}\n    .amarelo{background-color: lightyellow;}\n</style>\n\n<table border=\"1\"\n  <colgroup>\n    <col class=\"rosa\">\n    <col class=\"ciano\">\n    <col class=\"amarelo\">\n  </colgroup>\n<tr><td><strong>\n\n\n[<- Previous](SegData.eclnb)\n</strong></td><td><strong>\n\n[ MENU ML ](Menu_ML.eclnb)\n</strong></td><td><strong>\n\n[Next ->](QueryData.eclnb)\n</strong></td></tr><table>",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "id": "8a67572e-1ccb-4157-b6d8-e796d226b920",
+    "files": [],
+    "nodes": [
+        {
+            "id": "c516338a-d4b8-450b-9ff5-12352725b958",
+            "name": "",
+            "value": "<H3><font color=\"cyan\"><strong>1. Definição do problema:</strong></font></H3>",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "36333b0f-138f-475a-acd7-6dd3e9660b80",
+            "name": "",
+            "value": "<H3><font color=\"yellow\"><strong>“Dado um conjunto de atributos de uma propriedade (localização, m2, ano de construção/aquisição, nº cômodos, etc), como predizer o seu valor real de venda?\"</strong></font></H3>",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "e0058be3-cad6-4d4a-a62b-fcbc3d03ce74",
+            "name": "",
+            "value": "<style>\n    .rosa{background-color: mistyrose;}\n    .ciano{background-color: lightcyan;}\n    .amarelo{background-color: lightyellow;}\n</style>\n\n<table border=\"1\"\n  <colgroup>\n    <col class=\"rosa\">\n    <col class=\"ciano\">\n    <col class=\"amarelo\">\n  </colgroup>\n<tr><td><strong>\n\n\n[<- Previous](Menu_ML.eclnb)\n</strong></td><td><strong>\n\n[ MENU ML ](Menu_ML.eclnb)\n</strong></td><td><strong>\n\n[Next ->](ExtData.eclnb)\n</strong></td></tr><table>",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}

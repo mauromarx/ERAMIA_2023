@@ -1,0 +1,46 @@
+Procedimento - Sequência de execução (submit/compile) dos códigos:
+
+Códigos:
+BWR_Tests.ecl (submit)
+BWR_Demo00.ecl (submit)
+BWR_Demo01.ecl (submit)
+BWR_Demo02.ecl (submit)
+BWR_Demo03.ecl (submit)
+BWR_Demo04.ecl (submit)
+BWR_Demo05.ecl (submit)
+modInline01.ecl
+modInline02.ecl
+BWR_BrowseData01.ecl (submit)
+modPersons.ecl
+BWR_Persons_CSV (submit = opcional para CSV testes)
+modPersons_CSV.ecl (opcional para CSV testes)
+BWR_BrowseData02.ecl (submit)
+BWR_DP_Persons.ecl (submit = opcional para CSV testes)
+BWR_Demo06.ecl (submit)
+BWR_Demo07.ecl (submit)
+UID_Persons.ecl
+STD_Persons.ecl
+BWR_BrowseData03.ecl (submit)
+IDX_Persons.ecl
+BWR_BuildIndexes.ecl (submit)
+Fetch_Persons.ecl  (compilar em Roxie)
+BWR_TestQueries.ecl (submit)
+
+Submit/Compile:
+BWR_Tests.ecl (submit)
+BWR_Demo00.ecl (submit)
+BWR_Demo01.ecl (submit)
+BWR_Demo02.ecl (submit)
+BWR_Demo03.ecl (submit)
+BWR_Demo04.ecl (submit)
+BWR_Demo05.ecl (submit)
+BWR_BrowseData01.ecl (submit)
+BWR_Persons_CSV (submit = opcional para CSV testes)
+BWR_BrowseData02.ecl (submit)
+BWR_DP_Persons.ecl (submit = opcional para CSV testes)
+BWR_Demo06.ecl (submit)
+BWR_Demo07.ecl (submit)
+BWR_BrowseData03.ecl (submit)
+BWR_BuildIndexes.ecl (submit)
+Fetch_Persons.ecl  (compile em Roxie)
+BWR_TestQueries.ecl (submit)

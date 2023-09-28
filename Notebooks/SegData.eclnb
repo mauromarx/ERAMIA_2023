@@ -1,0 +1,34 @@
+{
+    "id": "8a1c1ed9-0f7f-4cfe-9f95-d21288728c45",
+    "files": [],
+    "nodes": [
+        {
+            "id": "d79ce919-45bf-4aa2-aef9-9ed0a54cf5b5",
+            "name": "",
+            "value": "<H3><font color=\"cyan\"><strong>4. Segregação dos dados</strong></font></H3>",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "e4e41081-2cb0-4546-9133-2edd646d9809",
+            "name": "",
+            "value": "#### Código: modSegConvData.ecl\n##### Segregação dos dados e conversão matricial dos campos numéricos:",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "76f087f4-bbe0-45ba-bb8e-4f7c34ea3e51",
+            "name": "",
+            "value": "IMPORT $;\nIMPORT ML_Core;\n//\nPrepData := $.modPrepData.PrepData;\n//\n// Torne os dados aleatórios, ordenando os registros pelo número randômico\nPrepDataSort := SORT(PrepData, rnd);\n//\n//\n// Segregação dos dados - Considerando os primeiros 5.000 registros como amostra de Treinamento\nmyTrainData := PROJECT(PrepDataSort[1..5000], $.modPrepData.ML_Prop)\n                          :PERSIST('~CLASS::XYZ::ML::Train');             // layout sem o campo rnd\n//\n// Segregação dos dados - Considerando os 2.000 registros seguintes como amostra de Teste\nmyTestData  := PROJECT(PrepDataSort[5001..7000], $.modPrepData.ML_Prop)\n                          :PERSIST('~CLASS::XYZ::ML::Test');              // layout sem o campo rnd\n//\n//\n// Conversão Matricial dos campos numéricos\nML_Core.ToField(myTrainData, myTrainDataNF);\nML_Core.ToField(myTestData, myTestDataNF);\n//\n//\nEXPORT modSegConvData := MODULE\n\tEXPORT myIndTrainDataNF := myTrainDataNF(number < 10);    // excluindo o campo propertyid\n//\n\tEXPORT myDepTrainDataNF := PROJECT(myTrainDataNF(number = 10), TRANSFORM(RECORDOF(LEFT),\n                                                                      SELF.number := 1,\n                                                                      SELF := LEFT));\n//\n\tEXPORT myIndTestDataNF := myTestDataNF(number < 10);      // excluindo o campo propertyid\n//\n\tEXPORT myDepTestDataNF := PROJECT(myTestDataNF(number = 10), TRANSFORM(RECORDOF(LEFT), \n                                                                    SELF.number := 1,\n                                                                    SELF := LEFT));\nEND;\n//",
+            "mode": "ecl",
+            "outputs": []
+        },
+        {
+            "id": "953b2f7e-193c-4e8f-96f3-5b2505c7a454",
+            "name": "",
+            "value": "<style>\n    .rosa{background-color: mistyrose;}\n    .ciano{background-color: lightcyan;}\n    .amarelo{background-color: lightyellow;}\n</style>\n\n<table border=\"1\"\n  <colgroup>\n    <col class=\"rosa\">\n    <col class=\"ciano\">\n    <col class=\"amarelo\">\n  </colgroup>\n<tr><td><strong>\n\n\n[<- Previous](PrepData.eclnb)\n</strong></td><td><strong>\n\n[ MENU ML ](Menu_ML.eclnb)\n</strong></td><td><strong>\n\n[Next ->](TrainModel.eclnb)\n</strong></td></tr><table>",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}

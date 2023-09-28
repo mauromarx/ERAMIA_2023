@@ -1,0 +1,42 @@
+{
+    "id": "3b767aec-1870-4973-8fca-b565902ca494",
+    "files": [],
+    "nodes": [
+        {
+            "id": "26ff75a6-eecb-447e-908a-506a6a98557d",
+            "name": "",
+            "value": "<H3><font color=\"yellow\"><strong>Demonstração:</strong></font></H3>",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "033b8cc1-f5c8-46a6-aa5e-78b48775bba0",
+            "name": "",
+            "value": "#### Código: BWR_Demo00.ecl\n##### Elementos básicos constituintes da linguagem ECL:",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "40b369f4-dc80-443d-acc9-a9369e258869",
+            "name": "",
+            "value": "// Uma definicao...\nMyDef := 'Hello World';     // definicao do tipo Valor Unico (value)\"\n\n// Uma acao...\nOUTPUT('Hello World');      // opcao 01\nOUTPUT(MyDef);              // opcao 02\nmydef;                      // opcao 03",
+            "mode": "ecl",
+            "outputs": [],
+            "private": false
+        },
+        {
+            "id": "f7162188-2971-48fe-8771-ebdf46353897",
+            "name": "",
+            "value": "<style>\n    .rosa{background-color: mistyrose;}\n    .ciano{background-color: lightcyan;}\n    .amarelo{background-color: lightyellow;}\n</style>\n\n<table border=\"1\"\n  <colgroup>\n    <col class=\"rosa\">\n    <col class=\"ciano\">\n    <col class=\"amarelo\">\n  </colgroup>\n<tr><td><strong>\n\n\n[<- Previous](Overture.eclnb)\n</strong></td><td><strong>\n\n[ MENU ](Menu.eclnb)\n</strong></td><td><strong>\n\n[Next ->](BWR_Demo01.eclnb)\n</strong></td></tr><table>",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "c0b26adc-46f7-4bf9-8f5a-b512ee8e8b6d",
+            "name": "",
+            "value": "// IMPORT ^.Code.Template_2023 AS X;\n// X.BWR_Demo00;",
+            "mode": "ecl",
+            "outputs": []
+        }
+    ]
+}

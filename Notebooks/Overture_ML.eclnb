@@ -1,0 +1,13 @@
+{
+    "id": "4c46057f-6963-4815-9acf-8776c52424ce",
+    "files": [],
+    "nodes": [
+        {
+            "id": "bc0adea9-1c22-4b8b-844b-d9b2ba46882d",
+            "name": "",
+            "value": "<H2><i><font color=\"Cyan\"><strong>Machine Learning</strong></font></i></H2>\n<img src=\".\\images\\ML.jpg\"  alt=\"ML\"  width=\"740\" />\n\n<style>\n    .black{background-color: black;}\n</style>\n\n<table border=\"1\"\n  <colgroup>\n    <col class=\"black\">\n    <col class=\"black\">\n  </colgroup>\n<tr><td><strong>\n\n[ MENU ML ](Menu_ML.eclnb)\n</strong></td><td><strong>\n\n[ Abertura ](Overture.eclnb)\n</strong></td></tr><table>",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}

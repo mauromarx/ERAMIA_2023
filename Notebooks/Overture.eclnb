@@ -1,0 +1,13 @@
+{
+    "id": "698d47c8-acff-4b38-abcc-aff61e6b0618",
+    "files": [],
+    "nodes": [
+        {
+            "id": "872b333a-b9de-43be-99dc-817e06e88529",
+            "name": "",
+            "value": "<H2><i><font color=\"Red\"><strong>LexisNexis Risk Solutions</strong></font></i></H2>\n<img src=\".\\images\\LNRS_Logo.jpg\"  alt=\"LNRS_Logo\"  width=\"370\" />\n\n<H2><i><font color=\"steelblue\"><strong>HPCC Systems</strong> platform</font></i></H2>\n<img src=\".\\images\\HPCC_Logo.jpg\"  alt=\"HPCC_Logo\"  width=\"370\" />\n\n<style>\n    .black{background-color: black;}\n</style>\n\n<table border=\"1\"\n  <colgroup>\n    <col class=\"black\">\n  </colgroup>\n<tr><td><strong>\n\n[ MENU ](Menu.eclnb)\n</strong></td></tr><table>",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}

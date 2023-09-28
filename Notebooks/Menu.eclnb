@@ -1,0 +1,13 @@
+{
+    "id": "3a4f796f-2e9a-41b5-a888-e65e6b8d8c70",
+    "files": [],
+    "nodes": [
+        {
+            "id": "64768479-4e71-4fa2-b0a4-8b788a8fb511",
+            "name": "",
+            "value": "<H4><font color=\"yellow\"><strong>MENU:</strong></font></H4>\n\n1. [Elementos básicos constituintes da linguagem ECL: Definição & Ação](BWR_Demo00.eclnb)\n2. [Estruturas de dados basicas em ECL: *RECORD* - *DATASET*](BWR_Demo01.eclnb)\n3. [Dataset \"Persons\" - *MODULE*](modPersons.eclnb)\n\n- [Abertura](Overture.eclnb)\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n&nbsp;&nbsp;\n[[Abertura: ***Machine Learning***]](Overture_ML.eclnb)\"",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}
